@@ -1,0 +1,1 @@
+struct BIT{int n;vector<long long>b;BIT(int n):n(n),b(n+1){};void add(int i,long long v){for(;i<=n;i+=i&-i)b[i]+=v;}long long sum(int i){long long r=0;for(;i;i-=i&-i)r+=b[i];return r;}};

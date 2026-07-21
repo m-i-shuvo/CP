@@ -1,0 +1,1 @@
+struct DSU{vector<int>p,s;DSU(int n){p.resize(n+1);s.assign(n+1,1);iota(p.begin(),p.end(),0);}int f(int x){return p[x]==x?x:p[x]=f(p[x]);}bool u(int a,int b){a=f(a);b=f(b);if(a==b)return false;if(s[a]<s[b])swap(a,b);p[b]=a;s[a]+=s[b];return true;}};

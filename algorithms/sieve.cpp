@@ -1,0 +1,1 @@
+vector<int> sieve(int n){vector<bool>p(n+1,true);vector<int>pr;p[0]=p[1]=false;for(int i=2;i<=n;i++)if(p[i]){pr.push_back(i);if(1LL*i*i<=n)for(int j=i*i;j<=n;j+=i)p[j]=false;}return pr;}
