@@ -68,7 +68,7 @@ ll modpow(ll a, ll b, ll mod = MOD){
 }
 
 void solve(){
-
+cout << "h" <<endl;
 }
 
 int main(){
